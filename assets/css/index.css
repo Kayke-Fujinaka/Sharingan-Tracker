@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: radial-gradient(#FF0101, #8E0101);
+}
+
+.container {
+    display: flex;
+}
+
+.container .eye {
+    position: relative;
+    width: 8em;
+    height: 8em;
+    background: #fff;
+    border: 4px #000 solid;
+    animation: spin 5s ease-in-out;
+    margin: 0 20px;
+    display: block;
+    border-radius: 50%;
+    box-shadow: 0 2px 40px rgb(0 0 0 / 85%), inset 0 0 5px #000;
+}
+
+.container .eye::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 35px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #e41414;
+    transform: translate(-50%, -50%);
+    border: 3px solid #000;
+    box-sizing: border-box;
+    animation: spin 2s ease-in-out;
+}
+
+.eye .inner-ring {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 35px;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(120, 13, 13, 0.5);
+
+}
+
+.container, .eye, .tomoe, .circle, .inner-ring {
+    border-radius: 50%;
+}
+
+.tomoe, .circle {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: #000;
+}
+
+.eye .tomoe:nth-child(1) {
+    top: 0px;
+    left: 3px;
+    transform: translateX(-50%);
+}
+
+.eye .tomoe:before {
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    top: 0px;
+    left: -5px;
+    width: 6px;
+    height: 3px;
+    border-left: 10px solid rgb(19, 15, 15);
+    border-radius: 100% 0 0 0;
+
+}
+
+.eye .tomoe:nth-child(2){
+    top: 18px;
+    left: 5px;
+    transform: rotate(-120deg);
+}
+
+.eye .tomoe:nth-child(3){
+    left: 18px;
+    bottom: 9px;
+    transform: rotate(120deg);
+}
+
+.eye .circle {
+    top: 7px;
+    left: 7px;
+    width: 6px;
+    height: 6px;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.6);
+}

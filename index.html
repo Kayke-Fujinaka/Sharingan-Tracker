@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharingan</title>
+    <link rel="stylesheet" href="/assets/css/index.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="eye">
+            <div class="inner-ring">
+                <div class="tomoe"></div>
+                <div class="tomoe"></div>
+                <div class="tomoe"></div>
+                <div class="circle"></div>
+            </div>
+        </div>
+
+        <div class="eye">
+            <div class="inner-ring">
+                <div class="tomoe"></div>
+                <div class="tomoe"></div>
+                <div class="tomoe"></div>
+                <div class="circle"></div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+<script type="text/javascript">
+
+    document.querySelector('body').addEventListener('mousemove', eyeball);
+
+    function eyeball() {
+        const eye = document.querySelectorAll('.eye');
+        eye.forEach(function (eye) {
+
+            let x = (eye.getBoundingClientRect().left) + (eye.clientWidth / 2);
+            let y = (eye.getBoundingClientRect().top) + (eye.clientHeight / 2);
+
+            let radian = Math.atan2(event.pageX - x, event.pageY - y);
+            let rotation = (radian * (180 / Math.PI) * -1) + 270;
+
+            eye.style.transform = "rotate(" + rotation + "deg)"
+
+        });
+    }
+</script>
+</script>
+
+</html>
