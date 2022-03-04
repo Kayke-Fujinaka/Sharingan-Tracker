@@ -4,7 +4,7 @@
 
 >  Sharingan eyes that follow mouse movement.
 
-Confira a aplicação: https://kayke-fujinaka.github.io/Eyes-Follow-Mouse/
+Confira a aplicação: https://eyefollowmouse.netlify.app
 
 ## 🚀 Technologies
 
