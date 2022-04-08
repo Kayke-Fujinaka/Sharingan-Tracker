@@ -1,6 +1,6 @@
 # Eyes Follow Mouse
 
-<img src="./assets/img/gif.gif" width="800px" height="500px" alt="Gif do Teste">
+<img src="./assets/img/gif.gif" alt="Gif do Teste">
 
 >  Sharingan eyes that follow mouse movement.
 
