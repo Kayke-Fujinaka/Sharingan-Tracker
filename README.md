@@ -1,15 +1,15 @@
-# Eyes Follow Mouse
+<h1 align="center">👀 Sharingan Tracker</h1>
 
 <img src="./assets/img/gif.gif" alt="Gif do Teste">
 
 >  Sharingan eyes that follow mouse movement.
 
-Check the Application: https://eyefollowmouse.netlify.app
+Check the Application: https://kayke-fujinaka.github.io/Sharingan-Tracker/
+
 ## :page_facing_up: Explanation
 
-O projeto funciona com os olhos seguindo o movimento do seu mouse.
+The project features eyes that follow your mouse movement, themed with the Sharingan from the anime Naruto.
 
-Os olhos são tematizados com o sharingan do anime Naruto.
 ## :rocket: Technologies ##
 
 The following tools were used in this project:
